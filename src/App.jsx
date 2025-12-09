@@ -160,7 +160,7 @@ const App = () => {
             <img 
                 src="/logo.png" 
                 alt="herologo" 
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-72 w-auto object-contain drop-shadow-xl"
+                className="absolute bottom-0 left-1/2  h-72 w-auto object-contain drop-shadow-xl"
               />
             <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">Western Nutrition, Bangladeshi Soul</h2>
             <p className="text-gray-600 text-lg">
