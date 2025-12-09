@@ -35,7 +35,7 @@ const App = () => {
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
             {/* LOGO PLACEHOLDER */}
             <img 
-              src="https://placehold.co/180x50/166534/ffffff?text=SHAKEON+LOGO" 
+              src="images/logo.png" 
               alt="Shakeon Logo" 
               className="h-10 w-auto object-contain rounded shadow-sm"
             />
@@ -141,7 +141,7 @@ const App = () => {
             
             {/* HERO PRODUCT PLACEHOLDER */}
             <img 
-              src="https://placehold.co/300x500/14532d/ffffff?text=Hero+Bottle+Shot" 
+              src="images/hero.png" 
               alt="Shakeon Hero Bottle" 
               className="relative z-10 h-full w-auto object-contain drop-shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500"
             />
