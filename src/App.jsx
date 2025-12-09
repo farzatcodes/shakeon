@@ -366,7 +366,7 @@ const App = () => {
                <div className="flex items-center gap-2 mb-4">
                 {/* FOOTER LOGO PLACEHOLDER */}
                 <img 
-                  src="https://placehold.co/150x40/14532d/ffffff?text=SHAKEON+LOGO" 
+                  src="/logo.png" 
                   alt="Shakeon Logo" 
                   className="h-8 w-auto object-contain rounded opacity-80"
                 />
