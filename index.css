@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+---
+
+### **Step 5: Add the Landing Page Code**
+1. Open `src/App.jsx`.
+2. Delete everything inside this file.
+3. Paste the **entire React code** I generated for you in the previous response into this file.
+
+**Note:** If the code I gave you exports the component as `ShakeonLanding`, ensure your `main.jsx` (or `index.js`) is importing it correctly, or simply change the export in `App.jsx` to `export default App;` and rename the function to `App`.
+
+---
+
+### **Step 6: Run the Site**
+Back in your terminal, run:
+
+```bash
+npm run dev
