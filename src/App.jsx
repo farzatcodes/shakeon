@@ -141,7 +141,7 @@ const App = () => {
             
             {/* HERO PRODUCT PLACEHOLDER */}
             <img 
-              src="images/hero.png" 
+              src="../images/hero.png" 
               alt="Shakeon Hero Bottle" 
               className="relative z-10 h-full w-auto object-contain drop-shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500"
             />
@@ -224,7 +224,7 @@ const App = () => {
               
               {/* PRODUCT IMAGE 1 PLACEHOLDER */}
               <img 
-                src="https://placehold.co/200x350/fcd34d/78350f?text=Banana+Cinnamon" 
+                src="../images/banana.png" 
                 alt="Banana Cinnamon Bottle" 
                 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-72 w-auto object-contain drop-shadow-xl"
               />
@@ -246,7 +246,7 @@ const App = () => {
               
                {/* PRODUCT IMAGE 2 PLACEHOLDER */}
                <img 
-                src="https://placehold.co/200x350/166534/ffffff?text=Dates+Almond" 
+                src="../images/dates.png" 
                 alt="Dates Almond Bottle" 
                 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-80 w-auto object-contain drop-shadow-xl"
               />
@@ -267,7 +267,7 @@ const App = () => {
               
               {/* PRODUCT IMAGE 3 PLACEHOLDER */}
               <img 
-                src="https://placehold.co/200x350/a8a29e/44403c?text=Choco+Chickpea" 
+                src="../images/chocolate.png" 
                 alt="Chocolate Chickpea Bottle" 
                 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-72 w-auto object-contain drop-shadow-xl"
               />
