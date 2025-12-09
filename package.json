@@ -1,0 +1,4 @@
+"devDependencies": {
+  "tailwindcss": "^3.4.1",
+  "vite": "^5.0.0"   <-- ADD THIS LINE (Make sure to add a comma to the line before it!)
+}
