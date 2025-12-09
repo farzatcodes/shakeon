@@ -416,4 +416,5 @@ const ShakeonLanding = () => {
   );
 };
 
+
 export default ShakeonLanding;
