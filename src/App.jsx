@@ -35,7 +35,7 @@ const App = () => {
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
             {/* LOGO PLACEHOLDER */}
             <img 
-              src="images/logo.png" 
+              src="../images/logo.png" 
               alt="Shakeon Logo" 
               className="h-10 w-auto object-contain rounded shadow-sm"
             />
