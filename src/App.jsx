@@ -343,7 +343,7 @@ const App = () => {
                  <div className="flex items-center gap-3">
                    <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
                    <div>
-                     <p className="font-bold text-slate-900 text-sm">Sadman Sakib</p>
+                     <p className="font-bold text-slate-900 text-sm">Saad Zubair</p>
                      <p className="text-slate-500 text-xs">NSU Student</p>
                    </div>
                  </div>
