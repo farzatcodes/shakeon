@@ -316,12 +316,6 @@ const App = () => {
     className="w-full h-auto rounded-3xl shadow-xl object-cover"
   />
 
-  {/* Promo 5 */}
-  <img 
-    src="/promo-5.jpeg"
-    alt="Promotional Image 5"
-    className="w-full h-auto rounded-3xl shadow-xl object-cover"
-  />
 
 </div>
 
@@ -372,6 +366,13 @@ const App = () => {
                    </div>
                  </div>
                </div>
+                {/* Promo 5 */}
+  <img 
+    src="/promo-5.jpeg"
+    alt="Promotional Image 5"
+    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+  />
+
             </div>
 
             <div className="md:w-1/2 relative">
