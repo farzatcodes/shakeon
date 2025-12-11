@@ -290,35 +290,35 @@ const App = () => {
 
   {/* Promo 1 */}
   <img 
-    src="/promo-1.jpg"
+    src="/promo-1.jpeg"
     alt="Promotional Image 1"
     className="w-full h-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 2 */}
   <img 
-    src="/promo-2.jpg"
+    src="/promo-2.jpeg"
     alt="Promotional Image 2"
     className="w-full h-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 3 */}
   <img 
-    src="/promo-3.jpg"
+    src="/promo-3.jpeg"
     alt="Promotional Image 3"
     className="w-full h-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 4 */}
   <img 
-    src="/promo-4.jpg"
+    src="/promo-4.jpeg"
     alt="Promotional Image 4"
     className="w-full h-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 5 */}
   <img 
-    src="/promo-5.jpg"
+    src="/promo-5.jpeg"
     alt="Promotional Image 5"
     className="w-full h-auto rounded-3xl shadow-xl object-cover"
   />
