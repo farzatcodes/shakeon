@@ -157,11 +157,7 @@ const App = () => {
       <section id="about" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <img 
-                src="/logo.png" 
-                alt="herologo" 
-                className="absolute bottom-0 left-1/2  h-72 w-auto object-contain drop-shadow-xl"
-              />
+           
             <h2 className="text-3xl md:text-4xl font-bold text-green-900 mb-4">Western Nutrition, Bangladeshi Soul</h2>
             <p className="text-gray-600 text-lg">
               We ditched the chemicals and the sugar. We kept the flavor and the function. Shakeon is the bridge between your fitness goals and your taste buds.
@@ -287,9 +283,8 @@ const App = () => {
           </div>
         </div>
       </section>
-</section>
 
-{/* 🔥 PROMOTIONAL IMAGES (All 5) — Inserted After Flavors Section (A3) */}
+
 
 <div className="w-full py-10 px-4 md:px-8 space-y-10">
 
