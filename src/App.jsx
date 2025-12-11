@@ -287,6 +287,48 @@ const App = () => {
           </div>
         </div>
       </section>
+</section>
+
+{/* 🔥 PROMOTIONAL IMAGES (All 5) — Inserted After Flavors Section (A3) */}
+
+<div className="w-full py-10 px-4 md:px-8 space-y-10">
+
+  {/* Promo 1 */}
+  <img 
+    src="/promo-1.jpg"
+    alt="Promotional Image 1"
+    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+  />
+
+  {/* Promo 2 */}
+  <img 
+    src="/promo-2.jpg"
+    alt="Promotional Image 2"
+    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+  />
+
+  {/* Promo 3 */}
+  <img 
+    src="/promo-3.jpg"
+    alt="Promotional Image 3"
+    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+  />
+
+  {/* Promo 4 */}
+  <img 
+    src="/promo-4.jpg"
+    alt="Promotional Image 4"
+    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+  />
+
+  {/* Promo 5 */}
+  <img 
+    src="/promo-5.jpg"
+    alt="Promotional Image 5"
+    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+  />
+
+</div>
 
       {/* Target Audience / Benefits */}
       <section id="benefits" className="py-20 bg-green-50 overflow-hidden">
