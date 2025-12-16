@@ -359,12 +359,7 @@ const App = () => {
                      <Leaf size={24} />
                    </div>
                    <div>
-                         {/* Promo 5 */}
-  <img 
-    src="/promo-5.jpeg"
-    alt="Promotional Image 5"
-    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
-  />
+                         
 
                      <h4 className="text-xl font-bold text-slate-800">The Conscious Consumer</h4>
                      <p className="text-slate-600 text-sm mt-1">
@@ -395,6 +390,12 @@ const App = () => {
             </div>
           </div>
         </div>
+         {/* Promo 5 */}
+  <img 
+    src="/promo-5.jpeg"
+    alt="Promotional Image 5"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
+  />
       </section>
 
       {/* Footer */}
