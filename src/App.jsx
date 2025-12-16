@@ -292,28 +292,28 @@ const App = () => {
   <img 
     src="/promo-1.jpeg"
     alt="Promotional Image 1"
-   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-contain"
+   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
   />
 
   {/* Promo 2 */}
   <img 
     src="/promo-2.jpeg"
     alt="Promotional Image 2"
-    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-contain"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
   />
 
   {/* Promo 3 */}
   <img 
     src="/promo-3.jpeg"
     alt="Promotional Image 3"
-   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-contain"
+   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
   />
 
   {/* Promo 4 */}
   <img 
     src="/promo-4.jpeg"
     alt="Promotional Image 4"
-   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-contain"
+   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
   />
 
 
@@ -359,6 +359,13 @@ const App = () => {
                      <Leaf size={24} />
                    </div>
                    <div>
+                         {/* Promo 5 */}
+  <img 
+    src="/promo-5.jpeg"
+    alt="Promotional Image 5"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
+  />
+
                      <h4 className="text-xl font-bold text-slate-800">The Conscious Consumer</h4>
                      <p className="text-slate-600 text-sm mt-1">
                        Lactose intolerant? Diabetic? Or just trying to eat clean? We read the labels so you don't have to worry.
@@ -366,13 +373,7 @@ const App = () => {
                    </div>
                  </div>
                </div>
-                {/* Promo 5 */}
-  <img 
-    src="/promo-5.jpeg"
-    alt="Promotional Image 5"
-    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-contain"
-  />
-
+            
             </div>
 
             <div className="md:w-1/2 relative">
