@@ -292,28 +292,28 @@ const App = () => {
   <img 
     src="/promo-1.jpeg"
     alt="Promotional Image 1"
-    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 2 */}
   <img 
     src="/promo-2.jpeg"
     alt="Promotional Image 2"
-    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 3 */}
   <img 
     src="/promo-3.jpeg"
     alt="Promotional Image 3"
-    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-cover"
   />
 
   {/* Promo 4 */}
   <img 
     src="/promo-4.jpeg"
     alt="Promotional Image 4"
-    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-cover"
   />
 
 
@@ -370,7 +370,7 @@ const App = () => {
   <img 
     src="/promo-5.jpeg"
     alt="Promotional Image 5"
-    className="w-full h-auto rounded-3xl shadow-xl object-cover"
+    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl shadow-xl object-cover"
   />
 
             </div>
