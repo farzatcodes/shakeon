@@ -1,5 +1,71 @@
 import React, { useState, useEffect } from 'react';
 import { Leaf, Shield, Zap, Menu, X, Check, ArrowRight, Instagram, Facebook, Twitter, Droplet } from 'lucide-react';
+import { useEffect, useRef } from "react";
+
+const PromoCarousel = () => {
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let scrollAmount = 0;
+
+    const autoScroll = setInterval(() => {
+      if (!slider) return;
+
+      scrollAmount += slider.clientWidth / 3;
+      if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0;
+      }
+
+      slider.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }, 3000);
+
+    return () => clearInterval(autoScroll);
+  }, []);
+
+  return (
+    <div className="w-full py-10 px-4 md:px-8">
+      <div
+        ref={sliderRef}
+        className="
+          flex gap-6 overflow-x-auto scroll-smooth
+          snap-x snap-mandatory
+          scrollbar-hide
+        "
+      >
+        {promos.concat(promos).map((item, index) => (
+          <div
+            key={index}
+            className="
+              flex-shrink-0
+              w-full
+              md:w-1/3
+              snap-center
+            "
+          >
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="
+                w-full
+                h-[220px]
+                md:h-[320px]
+                rounded-3xl
+                object-contain
+                bg-white
+              "
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PromoCarousel;
 
 const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -221,103 +287,13 @@ const App = () => {
                   <span className="bg-white px-2 py-1 rounded">Smooth</span>
                 </div>
               </div>
-              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-yellow-300 rounded-full opacity-50 blur-3xl group-hover:opacity-70 transition-opacity"></div>
-              
-              {/* PRODUCT IMAGE 1 PLACEHOLDER */}
-              <img 
-                src="/banana.png" 
-                alt="Banana Cinnamon Bottle" 
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-72 w-auto object-contain drop-shadow-xl"
-              />
-            </div>
+  const promos = [
+  { src: "/promo-1.jpeg", alt: "Promotional Image 1" },
+  { src: "/promo-2.jpeg", alt: "Promotional Image 2" },
+  { src: "/promo-3.jpeg", alt: "Promotional Image 3" },
+  { src: "/promo-4.jpeg", alt: "Promotional Image 4" },
+];
 
-            {/* Flavor 2 (Featured) */}
-            <div className="group relative overflow-hidden rounded-3xl bg-green-900 h-[500px] flex flex-col shadow-2xl transform md:-translate-y-8">
-              <div className="absolute top-0 right-0 bg-yellow-400 text-green-900 text-xs font-bold px-3 py-1 rounded-bl-lg z-20">BEST SELLER</div>
-              <div className="p-8 z-10">
-                <div className="inline-block bg-green-800/80 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-green-200 mb-4">LOCAL FAVORITE</div>
-                <h3 className="text-3xl font-bold text-white mb-2">Dates & <br/>Almond</h3>
-                <p className="text-green-200 mb-4">Pea Protein Base</p>
-                <div className="flex gap-2 text-sm text-green-100/80">
-                  <span className="bg-green-800 px-2 py-1 rounded">Khejur Gur</span>
-                  <span className="bg-green-800 px-2 py-1 rounded">Nutty</span>
-                </div>
-              </div>
-              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-green-600 rounded-full opacity-50 blur-3xl group-hover:opacity-70 transition-opacity"></div>
-              
-               {/* PRODUCT IMAGE 2 PLACEHOLDER */}
-               <img 
-                src="/dates.png" 
-                alt="Dates Almond Bottle" 
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-80 w-auto object-contain drop-shadow-xl"
-              />
-            </div>
-
-            {/* Flavor 3 */}
-            <div className="group relative overflow-hidden rounded-3xl bg-stone-100 h-[500px] flex flex-col border border-stone-200 hover:border-stone-400 transition-all">
-              <div className="p-8 z-10">
-                <div className="inline-block bg-white/80 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-stone-700 mb-4">GUILT FREE</div>
-                <h3 className="text-3xl font-bold text-slate-800 mb-2">Chocolate & <br/>Chickpea</h3>
-                <p className="text-slate-600 mb-4">Chickpea Protein Base</p>
-                <div className="flex gap-2 text-sm text-slate-500">
-                  <span className="bg-white px-2 py-1 rounded">Rich</span>
-                  <span className="bg-white px-2 py-1 rounded">Creamy</span>
-                </div>
-              </div>
-              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-stone-400 rounded-full opacity-50 blur-3xl group-hover:opacity-70 transition-opacity"></div>
-              
-              {/* PRODUCT IMAGE 3 PLACEHOLDER */}
-              <img 
-                src="/chocolate.png" 
-                alt="Chocolate Chickpea Bottle" 
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-72 w-auto object-contain drop-shadow-xl"
-              />
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-sm font-mono text-gray-400 mb-4">Packaging features "NO CAP" transparency guarantee.</p>
-            <button className="bg-slate-900 text-white px-10 py-3 rounded-full font-bold hover:bg-slate-800 transition-colors">
-              View Nutritional Labels
-            </button>
-          </div>
-        </div>
-      </section>
-
-
-
-<div className="w-full py-10 px-4 md:px-8 space-y-10">
-
-  {/* Promo 1 */}
-  <img 
-    src="/promo-1.jpeg"
-    alt="Promotional Image 1"
-   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
-  />
-
-  {/* Promo 2 */}
-  <img 
-    src="/promo-2.jpeg"
-    alt="Promotional Image 2"
-    className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
-  />
-
-  {/* Promo 3 */}
-  <img 
-    src="/promo-3.jpeg"
-    alt="Promotional Image 3"
-   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
-  />
-
-  {/* Promo 4 */}
-  <img 
-    src="/promo-4.jpeg"
-    alt="Promotional Image 4"
-   className="w-full max-w-5xl max-h-[420px] mx-auto rounded-3xl object-contain"
-  />
-
-
-</div>
 
       {/* Target Audience / Benefits */}
       <section id="benefits" className="py-20 bg-green-50 overflow-hidden">
